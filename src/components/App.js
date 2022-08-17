@@ -8,7 +8,7 @@ function App() {
   const [orders, setOrders] = useState([]);
 
   function addOrder(order) {
-    setOrders(orders.concat(order));
+    setOrders([...orders, order]);
   }
 
   const displayOrders = orders.map((order, idx) => {
